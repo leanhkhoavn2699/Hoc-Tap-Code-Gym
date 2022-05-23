@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng máy tính</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<form>
+<input id="giatri11" type="number" name="">
+<input id="giatri22" type="number" name=""><br>
+    <button type="submit" onclick="phepcong()">Addition(+)</button>
+    <button type="submit" onclick="pheptru()">Subtraction(-)</button>
+    <button type="submit" onclick="phepnhan()">Multiplication(X)</button>
+    <button type="submit" onclick="phepchia()">Division(/)</button>
+
+</form>
+<script>
+    function phepcong() {
+        let giatri1 = document.getElementById("giatri11").value;
+        let giatri2 = document.getElementById("giatri22").value;
+        giatri133 = parseInt(giatri1)
+        giatri122 = parseInt(giatri2)
+        alert(giatri133+giatri122);
+    }
+    function pheptru() {
+        let giatri1 = document.getElementById("giatri11").value;
+        let giatri2 = document.getElementById("giatri22").value;
+        alert(giatri1-giatri2);
+
+    }
+    function phepnhan() {
+        let giatri1 = document.getElementById("giatri11").value;
+        let giatri2 = document.getElementById("giatri22").value;
+        alert(giatri1*giatri2);
+    }
+    function phepchia() {
+        let giatri1 = document.getElementById("giatri11").value;
+        let giatri2 = document.getElementById("giatri22").value;
+        alert(giatri1/giatri2);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <input id="dauvao" type="number" />Amount <br>
+    <select id="tienthu1" name="">
+        <option value="by">USD</option>
+        <option value="ay">VND</option>
+    </select> <br>
+    <select id="tienthu2" name="">
+        <option value="by">USD</option>;
+        <option value="ay">VND</option>;
+    </select> <br>
+    <button type="submit" onclick="quydoi()" >Convert</button>
+</form>
+<script>
+    function quydoi() {
+        let giatridauvao = document.getElementById('dauvao').value;
+        let tienthu1 = document.getElementById('tienthu1').value;
+        let tienthu2 = document.getElementById('tienthu2').value;
+        if (tienthu1==tienthu2){
+            alert(giatridauvao);
+        }
+        if (tienthu1 == "ay" &&tienthu2 == "by"){
+            alert(giatridauvao*23500)
+        }
+        if (tienthu1 == "by" &&tienthu2 == "ay"){
+            alert(giatridauvao/23500)
+        }
+    }
+</script>
+</body>
+</html>

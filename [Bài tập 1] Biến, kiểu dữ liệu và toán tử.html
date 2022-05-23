@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập 1] Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<script>
+    let inputdiemvatly;
+    let inputdiemsinhhoc;
+    let inputdiemhoahoc;
+    inputdiemhoahoc = prompt('nhap diem hoa hoc vao day');
+    inputdiemsinhhoc= prompt('nhap diem sinh hoc vao day');
+    inputdiemvatly= prompt('nhap diem vat ly vao day');
+    let diemvatly = parseInt(inputdiemvatly);
+    let diemsinhhoc = parseInt(inputdiemsinhhoc);
+    let diemhoahoc = parseInt(inputdiemhoahoc);
+    let diemtrungbinh = (diemvatly + diemsinhhoc + diemhoahoc)/3;
+    document.write('diem trung binh la: ' + diemtrungbinh)
+</script>
+</body>
+</html>
+
+
